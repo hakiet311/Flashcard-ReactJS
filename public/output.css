@@ -189,6 +189,9 @@
   .my-3 {
     margin-block: calc(var(--spacing) * 3);
   }
+  .mb-3 {
+    margin-bottom: calc(var(--spacing) * 3);
+  }
   .flex {
     display: flex;
   }
@@ -340,7 +343,7 @@ body {
   height: 100vh;
   background-color: var(--color-slate-800);
   padding-inline: calc(var(--spacing) * 3);
-  padding-block: calc(var(--spacing) * 3);
+  padding-block: calc(var(--spacing) * 4);
   @media (width >= 48rem) {
     padding-inline: calc(var(--spacing) * 6);
   }

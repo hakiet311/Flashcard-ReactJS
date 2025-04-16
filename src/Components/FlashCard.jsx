@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 const FlashCard = (props) => {
   const [flipped, setFlipped] = useState(false);
   const obj = props.flashcardObj;
-  const { word, viet, pronounce } = obj;
+  const { word, viet, pronouce } = obj;
   // Auto flip back after 10s
   useEffect(() => {
     let timer;
@@ -33,7 +33,7 @@ const FlashCard = (props) => {
         <div className="absolute inset-0 bg-linear-to-t from-sky-500 to-indigo-500 text-white rounded-xl flex flex-col gap-3 items-center justify-center [transform:rotateY(180deg)] [backface-visibility:hidden]">
           <h1 className="text-2xl">{word}</h1>
           <p className="font-bold italic">{viet}</p>
-          <p className="text-xl">{pronounce}</p>
+          <p className="text-xl">{pronouce}</p>
         </div>
       </div>
     </div>
