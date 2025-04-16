@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+body {
+  @apply h-screen bg-slate-800 py-3 px-3 md:px-6 lg:px-12;
+}
